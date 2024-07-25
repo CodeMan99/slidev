@@ -1,10 +1,10 @@
 {
   "recommendations": [
-    "antfu.vite",
-    "Vue.volar",
     "antfu.iconify",
-    "dbaeumer.vscode-eslint",
     "antfu.unocss",
-    "csstools.postcss"
+    "antfu.vite",
+    "csstools.postcss",
+    "dbaeumer.vscode-eslint",
+    "Vue.volar"
   ]
 }

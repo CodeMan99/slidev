@@ -1,0 +1,25 @@
+{
+  "name": "Node.js & TypeScript",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "20-bookworm"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "antfu.iconify",
+        "antfu.unocss",
+        "antfu.vite",
+        "csstools.postcss",
+        "dbaeumer.vscode-eslint",
+        "Vue.volar"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash"
+      }
+    }
+  },
+  "postCreateCommand": "pnpm add -g pnpm"
+}
