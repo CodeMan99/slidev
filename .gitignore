@@ -3,6 +3,7 @@
 .idea
 .nuxt
 .output
+.pnpm-store
 .slidev
 .vite-inspect
 *-export
