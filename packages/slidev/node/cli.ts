@@ -6,6 +6,7 @@ import * as readline from 'node:readline'
 import process from 'node:process'
 import fs from 'fs-extra'
 import openBrowser from 'open'
+import isInsideContainer from 'is-inside-container'
 import type { Argv } from 'yargs'
 import yargs from 'yargs'
 import { blue, bold, cyan, dim, gray, green, underline, yellow } from 'kolorist'
@@ -80,6 +81,7 @@ cli.command(
     .option('remote', {
       type: 'string',
       describe: 'listen public host and enable remote control',
+      default: isInsideContainer() ? '' : undefined,
     })
     .option('tunnel', {
       default: false,
